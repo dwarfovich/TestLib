@@ -2,6 +2,7 @@
 #define PCH_H
 
 #include "framework.h"
+#include "nlohmann/json.hpp"
 
 #include <iostream>
 
