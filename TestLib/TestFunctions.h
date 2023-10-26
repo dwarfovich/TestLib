@@ -1,6 +1,5 @@
 #pragma once
 
-#include "nlohmann/json.hpp"
 #include <iostream>
 
 namespace tl {
@@ -12,6 +11,7 @@ inline void TestFunction2()
     nlohmann::json json;
     json["hello"] = "123";
     std::cout << json << std::endl;
+    int t = 34;
 };
 
 } // namespace tl
