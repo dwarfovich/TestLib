@@ -71,20 +71,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Build-$(Platform)-$(Configuration)\</OutDir>
-    <IntDir>$(OutDir).intermediate\</IntDir>
+    <OutDir>$(SolutionDir)Build-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir).$(ProjectName)-intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)Build-$(Platform)-$(Configuration)\</OutDir>
-    <IntDir>$(OutDir).intermediate\</IntDir>
+    <OutDir>$(SolutionDir)Build-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir).$(ProjectName)-intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)Build-$(Platform)-$(Configuration)\</OutDir>
-    <IntDir>$(OutDir).intermediate\</IntDir>
+    <OutDir>$(SolutionDir)Build-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir).$(ProjectName)-intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)Build-$(Platform)-$(Configuration)\</OutDir>
-    <IntDir>$(OutDir).intermediate\</IntDir>
+    <OutDir>$(SolutionDir)Build-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir).$(ProjectName)-intermediate\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -95,6 +95,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)3rd_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -113,6 +114,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)3rd_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -131,6 +133,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)3rd_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -149,6 +152,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)3rd_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>

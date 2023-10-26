@@ -1,3 +1,13 @@
 #pragma once
 
-void TestFunction();
+#include <iostream>
+
+namespace tl {
+
+void        TestFunction();
+inline void TestFunction2()
+{
+    std::cout << "Hello\n";
+};
+
+} // namespace tl
