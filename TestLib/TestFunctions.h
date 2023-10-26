@@ -12,6 +12,7 @@ inline void TestFunction2()
     json["hello"] = "123";
     std::cout << json << std::endl;
     int t = 34;
+    int a = 53;
 };
 
 } // namespace tl
