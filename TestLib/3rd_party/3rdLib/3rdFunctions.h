@@ -1,3 +1,5 @@
 #pragma once
 
-inline int ThirdFunction();
+inline int ThirdFunction(){
+	return 3;
+}
